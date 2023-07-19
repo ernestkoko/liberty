@@ -1,8 +1,8 @@
 # liberty
 
-A new Flutter project.
+A new Flutter project that showcases some fluent user interfaces (UIs)
 
-## Getting Started
+## Getting Started with flutter
 
 This project is a starting point for a Flutter application.
 
