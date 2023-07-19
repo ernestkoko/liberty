@@ -4,15 +4,16 @@ A new Flutter project that showcases some fluent user interfaces (UIs)
 
 # Images
 ## Landing page
-![alt image2](shot1.png)
+![alt image1](shot1.png)
 ## Registration page
 ![alt image2](shot2.png)
 ## Login page
-![alt image2](shot3.png)
+![alt image3](shot3.png)
 ## Home page
-![alt image2](shot4.png)
-![alt image2](shot5.png)
-![alt image2](shot6.png)
+![alt image4](shot4.png)
+![alt image5](shot5.png)
+![alt image6](shot6.png)
+![alt image7](shot7.png)
 ## Getting Started with flutter
 
 This project is a starting point for a Flutter application.
