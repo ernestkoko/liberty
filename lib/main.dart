@@ -4,6 +4,7 @@ import 'package:liberty/app/modules/home/bloc/home_bloc.dart';
 import 'package:liberty/app/modules/home/children/create_project/bloc/create_project_bloc.dart';
 import 'package:liberty/app/modules/home/children/project/bloc/project_bloc.dart';
 import 'package:liberty/app/modules/landing/bloc/landing_bloc.dart';
+import 'package:liberty/app/modules/task/add_task.dart';
 import 'package:liberty/route/pages.dart';
 import 'package:liberty/route/routes.dart';
 
@@ -30,6 +31,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (_) => CreateProjectBloc()..add(OnCreateProjectInitEvent()),
+        ),
+        BlocProvider(
+          create: (_) => AddTaskBloc()..add(OnAddTaskInitEvent()),
         ),
       ],
       child: MaterialApp(

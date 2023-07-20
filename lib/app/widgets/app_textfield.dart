@@ -2,7 +2,11 @@ import 'package:flutter/material.dart';
 
 class AppTextField extends StatelessWidget {
   const AppTextField(
-      {this.hintText, this.labelText, this.textInputType,this.suffixIcon, Key? key})
+      {this.hintText,
+      this.labelText,
+      this.textInputType,
+      this.suffixIcon,
+      Key? key})
       : super(key: key);
   final String? hintText;
   final String? labelText;
@@ -40,5 +44,40 @@ class AppTextField extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class AppTextField1 extends StatelessWidget {
+  AppTextField1(
+      {required this.labelText,
+      this.hintText,
+     this.prefix,
+      this.marginTop = 20,
+      this.marginBottom = 20,
+      Key? key})
+      : super(key: key);
+  final String labelText;
+  final String? hintText;
+  final Widget? prefix;
+  final double marginTop;
+  final double marginBottom;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: marginTop, bottom: marginBottom),
+      child: TextField(
+        decoration: InputDecoration(
+          // prefix: prefix,
+          prefixIcon: prefix,
+          contentPadding: const EdgeInsets.only(right: 8, top: 8),
+          alignLabelWithHint: false,
+          labelText: labelText,
+          floatingLabelBehavior: FloatingLabelBehavior.always,
+          hintText: hintText,
+        ),
+      ),
+    );
+    ;
   }
 }

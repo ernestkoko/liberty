@@ -3,7 +3,7 @@
 A new Flutter project that showcases some fluent user interfaces (UIs)
 
 # Screen Record
-![alt record1](record1.mov)
+![alt record1](record1.mov
 # Images
 ## Landing page
 ![alt image1](shot1.png)

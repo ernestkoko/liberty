@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:liberty/app/modules/home/children/create_project/bloc/create_project_bloc.dart';
 import 'package:liberty/app/widgets/app_button.dart';
+import 'package:liberty/app/widgets/app_textfield.dart';
 import '../../../home.dart';
 
 class CreateProjectPage extends StatelessWidget {
@@ -50,7 +51,7 @@ class CreateProjectPage extends StatelessWidget {
                       ),
                     ),
                     Expanded(
-                      child: _textField(
+                      child:  AppTextField1(
                           labelText: 'Project Name',
                           marginTop: 0.0,
                           marginBottom: 0.0),
@@ -60,7 +61,7 @@ class CreateProjectPage extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: _textField(
+                      child: AppTextField1(
                         labelText: 'Created (from)',
                         marginTop: 40,
                         prefix: const Icon(
@@ -72,7 +73,7 @@ class CreateProjectPage extends StatelessWidget {
                       width: 10,
                     ),
                     Expanded(
-                      child: _textField(
+                      child:  AppTextField1(
                         labelText: 'Created (to)',
                         marginTop: 40,
                         prefix: const Icon(Icons.calendar_month),
@@ -80,9 +81,9 @@ class CreateProjectPage extends StatelessWidget {
                     ),
                   ],
                 ),
-                _textField(
+                AppTextField1(
                     labelText: 'Assign to:', hintText: 'Add team members'),
-                _textField(labelText: 'Tags:'),
+                AppTextField1(labelText: 'Tags:'),
                 Container(
                     margin: const EdgeInsets.only(
                       top: 50,
@@ -145,25 +146,25 @@ class CreateProjectPage extends StatelessWidget {
     );
   }
 
-  Widget _textField(
-      {required String labelText,
-      String? hintText,
-      Widget? prefix,
-      double marginTop = 20,
-      double marginBottom = 20}) {
-    return Container(
-      margin: EdgeInsets.only(top: marginTop, bottom: marginBottom),
-      child: TextField(
-        decoration: InputDecoration(
-          // prefix: prefix,
-          prefixIcon: prefix,
-          contentPadding: const EdgeInsets.only(right: 8, top: 8),
-          alignLabelWithHint: false,
-          labelText: labelText,
-          floatingLabelBehavior: FloatingLabelBehavior.always,
-          hintText: hintText,
-        ),
-      ),
-    );
-  }
+  // Widget _textField(
+  //     {required String labelText,
+  //     String? hintText,
+  //     Widget? prefix,
+  //     double marginTop = 20,
+  //     double marginBottom = 20}) {
+  //   return Container(
+  //     margin: EdgeInsets.only(top: marginTop, bottom: marginBottom),
+  //     child: TextField(
+  //       decoration: InputDecoration(
+  //         // prefix: prefix,
+  //         prefixIcon: prefix,
+  //         contentPadding: const EdgeInsets.only(right: 8, top: 8),
+  //         alignLabelWithHint: false,
+  //         labelText: labelText,
+  //         floatingLabelBehavior: FloatingLabelBehavior.always,
+  //         hintText: hintText,
+  //       ),
+  //     ),
+  //   );
+  // }
 }

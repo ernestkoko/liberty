@@ -4,4 +4,5 @@ abstract class AppRoutes {
   static const signinPage = '/signin_page';
   static const homePage = '/home_page';
   static const projectPage = '/project_page';
+  static const addTaskPage = '/add_task_page';
 }
